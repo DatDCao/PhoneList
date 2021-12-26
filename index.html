@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Item</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"></script> -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <h1 style="text-align: center">Phone list</h1>
+    <div class="col d-flex justify-content-center block1">
+      <button type="button" class="btn btn-primary" onclick="open_Form()">
+        Add new phone
+      </button>
+      <div>
+        <form action="" style="display: flex">
+          <input
+            type="text"
+            class="form-control input_search"
+            placeholder="Search in website"
+          />
+          <button class="btn btn-success" type="submit">
+            <i class="fa fa-search"></i> Search
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div id="myForm" class="form">
+      <div class="form-group">
+        <button
+          id="close"
+          type="button"
+          class="btn-close"
+          aria-label="Close"
+          onclick="closeForm()"
+        ></button>
+        <div>
+          <div>
+            <label>Name:</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Name item"
+              required
+              name=""
+            />
+          </div>
+          <div>
+            <label>Price:</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Price item"
+              required
+              name=""
+            />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col">
+            <label>Quantity:</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Quantity item"
+              required
+              name=""
+            />
+          </div>
+          <div class="col">
+            <label>Brand:</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Brand item"
+              required
+              name=""
+            />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col">
+            <label>Description:</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Description item"
+              required
+              name=""
+            />
+          </div>
+          <div class="col">
+            <label>Condtions:</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Condtions item"
+              required
+              name=""
+            />
+          </div>
+        </div>
+        <div>
+          <label>Link image:</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Link image item"
+            required
+            name=""
+          />
+        </div>
+        <button class="btn btn-success button-submit" type="submit">
+          Submit
+        </button>
+      </div>
+    </div>
+    <div class="container">
+      <table class="table table-hover" class="table table-responsive">
+        <thead class="thead-dark">
+          <tr>
+            <th>ID</th>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Brand</th>
+            <th>Description</th>
+            <th>Condtions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>
+              <img
+                src="https://cdn.tgdd.vn/Products/Images/42/226935/samsung-galaxy-z-fold-3-silver-1-600x600.jpg"
+                alt=""
+              />
+            </td>
+            <td>Samsung Galaxy Z Fold3 5G 256GB</td>
+            <td>41.990.000₫</td>
+            <td>1</td>
+            <td>Samsung</td>
+            <td>Hàng chính hãng</td>
+            <td>New</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>
+              <img
+                src="https://cdn.tgdd.vn/Products/Images/42/153856/iphone-xi-do-600x600.jpg"
+                alt=""
+              />
+            </td>
+            <td>Iphone 11</td>
+            <td>15.990.000₫</td>
+            <td>1</td>
+            <td>Iphone</td>
+            <td>Hàng chính hãng</td>
+            <td>New</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>
+              <img
+                src="https://cdn.tgdd.vn/Products/Images/42/248293/xiaomi-11t-white-1-2-600x600.jpg"
+                alt=""
+              />
+            </td>
+            <td>Xiaomi 11T 5G 128GB</td>
+            <td>10.390.000₫</td>
+            <td>1</td>
+            <td>Xiaomi</td>
+            <td>Hàng chính hãng</td>
+            <td>New</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>
+              <img
+                src="https://cdn.tgdd.vn/Products/Images/42/251703/oppo-a95-4g-bac-2-600x600.jpg"
+                alt=""
+              />
+            </td>
+            <td>OPPO A95</td>
+            <td>6.990.000₫</td>
+            <td>1</td>
+            <td>OPPO</td>
+            <td>Hàng chính hãng</td>
+            <td>New</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>
+              <img
+                src="https://cdn.tgdd.vn/Products/Images/42/228967/samsung-galaxy-a52-8gb-256gb-thumb-violet-600x600-600x600.jpg"
+                alt=""
+              />
+            </td>
+            <td>Samsung Galaxy A52 128GB</td>
+            <td>7.990.000₫</td>
+            <td>1</td>
+            <td>Samsung</td>
+            <td>Hàng chính hãng</td>
+            <td>New</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>
+              <img
+                src="https://cdn.tgdd.vn/Products/Images/42/245607/Vivo-V23e-1-2-600x600.jpg"
+                alt=""
+              />
+            </td>
+            <td>Vivo V23e</td>
+            <td>9.990.000₫</td>
+            <td>1</td>
+            <td>Vivo</td>
+            <td>Hàng chính hãng</td>
+            <td>New</td>
+          </tr>
+
+          <tr>
+            <td>6</td>
+            <td>
+              <img
+                src="https://cdn.tgdd.vn/Products/Images/42/248283/samsung-galaxy-z-flip-3-violet-1-600x600.jpg"
+                alt=""
+              />
+            </td>
+            <td>Samsung Galaxy Z Flip3 5G 256GB</td>
+            <td>26.990.000₫</td>
+            <td>1</td>
+            <td>Samsung</td>
+            <td>Hàng chính hãng</td>
+            <td>New</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>
+              <img
+                src="https://cdn.tgdd.vn/Products/Images/42/223115/nokia-150-2020-den-600x600.jpg"
+                alt=""
+              />
+            </td>
+            <td>Nokia 150 (2020)</td>
+            <td>990.000₫</td>
+            <td>1</td>
+            <td>Nokia</td>
+            <td>Hàng chính hãng</td>
+            <td>New</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="./js/item.js"></script>
+  </body>
+</html>
